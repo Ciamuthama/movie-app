@@ -38,6 +38,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-ux": "^0.57.3"
+		"autoprefixer": "^10.4.17",
+		"svelte-ux": "^0.57.3",
+		"tailwindcss": "^3.4.1"
 	}
 }
