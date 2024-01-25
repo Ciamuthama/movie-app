@@ -5,6 +5,7 @@
 </script>
 
 <div>
+    
     <Home {movie}/>
 	
 </div>
