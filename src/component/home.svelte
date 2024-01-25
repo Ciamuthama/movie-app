@@ -4,10 +4,12 @@
 
 </script>
 
-<main  class="flex flex-wrap justify-center  mb-5 ">
+<main  class="flex flex-wrap justify-center mb-5 ">
     {#each movie as movies}
-       <div class="mx-auto transition-all hover:scale-105"> 
+    <div class="mx-2 "> 
+      <a href="/{movies.id}"> 
         <Card {movies}/>
-    </div>
+    </a>
+</div>
         {/each}
 </main>

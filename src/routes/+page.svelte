@@ -1,11 +1,9 @@
 <script lang="ts">
-    import Home from "../component/home.svelte"
+	import Home from '../component/home.svelte';
 	export let data;
-	let movie = data.results;
+  	let movie = data.results;
 </script>
 
 <div>
-    
-    <Home {movie}/>
-	
+	<Home {movie} />
 </div>
