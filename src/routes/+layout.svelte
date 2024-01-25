@@ -1,7 +1,7 @@
-<script>
- import "./styles.css"   
+<script lang="ts">
+	import './styles.css';
 </script>
 
 <main>
-<slot/>
+	<slot />
 </main>
