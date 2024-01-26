@@ -1,7 +1,9 @@
 <script lang="ts">
-	import Home from '../component/home.svelte';
+	import Home from '../lib/component/home.svelte';
 	export let data;
   	let movie = data.results;
+	
+	
 </script>
 
 <div>
