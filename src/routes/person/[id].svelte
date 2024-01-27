@@ -13,9 +13,9 @@
             maxage:0,
             props:{
                 // @ts-ignore
-                person:person.status === 'fulfilled' && person.value?.ok && (await person.value.json()),
+                person:person.status === 'fulfilled' && person.value?.ok ? (await person.value.json()): null,
                 // @ts-ignore
-                credit:credit.status === 'fulfilled' && credit.value?.ok && (await credit.value.json())
+                credit:credit.status === 'fulfilled' && credit.value?.ok ? (await credit.value.json()) : null
             }
         }
     }

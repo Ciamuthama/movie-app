@@ -1,10 +1,17 @@
-@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');@tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700:800&display=swap');
 
 @layer base{
     html{
         font-family: 'Nunito', sans-serif;
     }
+}
+
+.splide__pagination__page{
+    display: none !important;
+}
+
+.splide__arrow{
+    display: none !important;
 }

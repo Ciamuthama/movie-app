@@ -6,7 +6,7 @@ const headers = {
 	Authorization: `Bearer ${variable.api}`
 };
 
-export const movies = {
+export const Movies = {
 	getDiscover: async () => {
 		try {
 			return await fetch(`${url}/discover/movie`, {
@@ -16,6 +16,7 @@ export const movies = {
 			return err;
 		}
 	},
+	
 	getUpcoming: async () => {
 		try {
 			return await fetch(`${url}/movie/upcoming`, {
@@ -71,5 +72,5 @@ export const movies = {
 		}
 	}
 };
-
-export default movies;
+console.log(Movies);
+export default Movies;

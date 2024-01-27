@@ -3,7 +3,7 @@ import { variable } from "$lib/variables/variables";
 const url = variable.url
 const headers = {
 	Accept: 'application/json',
-	Authorization: `Bearer ${variable.api}`
+	Authorization: `${variable.api}`
 };
 
 
