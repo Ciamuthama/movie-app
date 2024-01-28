@@ -13,5 +13,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('svelte-ux/plugins/tailwind.cjs'),require("daisyui")],
+  plugins: [require('svelte-ux/plugins/tailwind.cjs'),require("daisyui"),require('tailwind-scrollbar-hide')],
 };

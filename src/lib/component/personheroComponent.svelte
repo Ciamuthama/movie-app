@@ -6,8 +6,10 @@
         return d.getFullYear()
     }
 
-    $: longBiography = person.biography.length > 300
+   
 </script>
 <div>
-    <h2>{person.name}</h2>
+    {#each person as item}
+        <h2>{item.birthday}</h2>
+    {/each}
 </div>

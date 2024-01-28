@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import { Shine } from 'svelte-ux';
 	import MdiStar from '~icons/mdi/star';
 
@@ -12,7 +12,7 @@
 </script>
 
 <Shine>
-	<div class="mx-4 max-sm:mx-6 max-sm:mb-4">
+	<div class="mx-4 max-sm:mx-3 max-sm:mb-4">
 		<Splide options={{ arrowPath: 'false', type: 'loop', autoplay: true }}>
 			{#each discover as movies}
 			<SplideSlide>
@@ -21,7 +21,7 @@
 						src={'https://image.tmdb.org/t/p/original' + movies.backdrop_path}
 						alt={movies.title}
 						loading="lazy"
-						class="image relative rounded object-fit h-[32rem] max-sm:h-full w-full max-sm:w-58 transition-all group-hover:scale-105"
+						class="image relative rounded object-fit h-[33rem] max-sm:h-full w-full max-sm:w-58 transition-all group-hover:scale-105"
 					/>
 					<div class="absolute top-0 mx-3 mt-1 rounded-xl bg-white flex items-center justify-center p-[0.1rem]">
 						<MdiStar color='#c2410c' class='h-[0.9rem]'/>

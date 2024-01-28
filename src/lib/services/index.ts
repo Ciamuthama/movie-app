@@ -26,6 +26,16 @@ export const Movies = {
 			return err;
 		}
 	},
+	getTrending: async()=>{
+		try{
+			return await fetch(`${url}/trending/movie/day`,{
+				headers
+			})
+		}
+		catch(err){
+			return err
+		}
+	},
 	getDetail: async (id: any) => {
 		try {
 			return await fetch(`${url}/movie/${id}`, {
@@ -72,5 +82,5 @@ export const Movies = {
 		}
 	}
 };
-console.log(Movies);
+
 export default Movies;

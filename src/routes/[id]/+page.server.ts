@@ -1,14 +1,24 @@
-import { API_KEY } from '$env/static/private'
-export async function load({fetch,params}){
-const same = await fetch(`
-https://api.themoviedb.org/3/movie/${params.id}?api_key=${API_KEY}`, {
-  method:'GET',
-  redirect:'follow'
-})
+import Movies from '$lib/services';
 
-.then(response => response.json())
-.then(result => result)
+export async function load({ params }) {
+	try {
+		const [details, similar] = await Promise.allSettled([
+			Movies.getDetail(params.id),
+			Movies.getSimilar(params.id)
+		]);
 
-return same
+		const detailsData =
+			details.status === 'fulfilled' && details.value.ok ? await details.value.json() : null;
 
+		const similarData =
+			similar.status === 'fulfilled' && similar.value.ok ? await similar.value.json() : null;
+
+		return { detailsData, similarData };
+	} catch (error) {
+		console.error('Error fetching data:', error);
+		return {
+			status: 500,
+			error: new Error('Internal Server Error')
+		};
+	}
 }

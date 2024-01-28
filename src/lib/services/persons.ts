@@ -7,7 +7,7 @@ const headers = {
 };
 
 
-export const movies = {
+export const Person = {
 	getDetail: async (id: any) => {
 		try {
 			return await fetch(`${url}/person/${id}`, {
@@ -28,4 +28,4 @@ export const movies = {
 	}
 };
 
-export default movies;
+export default Person;
