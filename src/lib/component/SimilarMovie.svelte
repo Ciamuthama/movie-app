@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SimilarCard from '$lib/cards/SimilarCard.svelte';
 	import { Shine } from 'svelte-ux';
-    import { fade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 
 	export let similar: any;
 	let movies = similar.results;
@@ -12,12 +12,15 @@
 	};
 </script>
 
-<div class="grid grid-flow-col gap-4 overflow-auto scrollbar-hide mb-4 lg:mx-0">
-	{#each movies as movie,index}
-		<Shine >
-			<a href="/{movie.id}" data-sveltekit-reload in:fade={{ duration: 300, delay: index * 100 }}>
-				<SimilarCard {movie} />
-			</a>
-		</Shine>
-	{/each}
+<div class="mt-4">
+	<h2 class="text-white font-bold">Similar Movies</h2>
+	<div class="grid grid-flow-col gap-4 overflow-auto scrollbar-hide mb-4 lg:mx-0">
+		{#each movies as movie, index}
+			<Shine>
+				<a href="/{movie.id}" data-sveltekit-reload in:fade={{ duration: 300, delay: index * 100 }}>
+					<SimilarCard {movie} />
+				</a>
+			</Shine>
+		{/each}
+	</div>
 </div>

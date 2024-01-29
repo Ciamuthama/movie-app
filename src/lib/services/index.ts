@@ -45,6 +45,15 @@ export const Movies = {
 			return err;
 		}
 	},
+	getVideo:async (id:any) => {
+		try {
+			return await fetch(`${url}/movie/${id}/videos`, {
+				headers
+			});
+		} catch (error) {
+			return error
+		}
+	},
    	getSimilar: async (id: any) => {
 		try {
 			return await fetch(`${url}/movie/${id}/similar`, {

@@ -2,9 +2,11 @@ import Movies from '$lib/services';
 
 export async function load({ params }) {
 	try {
-		const [details, similar] = await Promise.allSettled([
+		const [details, similar,credit,video] = await Promise.allSettled([
 			Movies.getDetail(params.id),
-			Movies.getSimilar(params.id)
+			Movies.getSimilar(params.id),
+			Movies.getCredits(params.id),
+			Movies.getVideo(params.id),
 		]);
 
 		const detailsData =
@@ -13,7 +15,15 @@ export async function load({ params }) {
 		const similarData =
 			similar.status === 'fulfilled' && similar.value.ok ? await similar.value.json() : null;
 
-		return { detailsData, similarData };
+		const creditData =
+			credit.status === 'fulfilled' && credit.value.ok ? await credit.value.json() : null;
+
+		const videoData = 
+			video.status === 'fulfilled' && video.value.ok ? await video.value.json() : null;
+
+		
+		
+		return { detailsData, similarData, creditData, videoData };
 	} catch (error) {
 		console.error('Error fetching data:', error);
 		return {
