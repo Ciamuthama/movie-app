@@ -43,6 +43,7 @@
 	"dependencies": {
 		"@splidejs/splide": "^4.1.4",
 		"@splidejs/svelte-splide": "^0.2.9",
+		"@vercel/speed-insights": "^1.0.9",
 		"autoprefixer": "^10.4.17",
 		"dotenv": "^16.4.1",
 		"svelte-ux": "^0.57.3",
