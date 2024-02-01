@@ -1,6 +1,7 @@
 <script>
 	export let video;
-	let trailer = video.results;
+	let trailer = video.results
+  
 	import { Button, Drawer } from 'svelte-ux';
 
 	let isModalOpen = false;

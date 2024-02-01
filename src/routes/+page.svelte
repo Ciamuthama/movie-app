@@ -8,7 +8,7 @@
 	let trending = data.trendingData.results
 </script>
 
-<div class="flex flex-col justify-center w-full mx-auto">
+<div class="flex flex-col justify-center w-full">
 	<MovieHero {discover} />
 	<TrendingComponent {trending}/>
 	<Home {upcoming} />

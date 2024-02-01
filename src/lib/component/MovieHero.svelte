@@ -12,7 +12,7 @@
 </script>
 
 <Shine>
-	<div class="mx-4 max-sm:mx-3 max-sm:mb-4">
+	<div class="mx-4 max-sm:mx-1 max-sm:mb-4">
 		<Splide options={{ arrowPath: 'false', type: 'loop', autoplay: true }}>
 			{#each discover as movies}
 			<SplideSlide>

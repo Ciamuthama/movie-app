@@ -10,7 +10,7 @@
 </script>
 
 <Shine>
-	<Tilt class="group-hover:scale-105 transition duration-500">
+	<div class="group-hover:scale-105 transition duration-500">
 		<Card
 			class="flex flex-col flex-wrap flex-shrink h-full mt-6 mb-6 max-sm:m-1 mx-4 max-sm:mx-1 border-0 border-black overflow-hidden skeleton transition ease-out"
 		>
@@ -37,5 +37,5 @@
 				</p></div>
 			</div>
 		</Card>
-	</Tilt>
+	</div>
 </Shine>
