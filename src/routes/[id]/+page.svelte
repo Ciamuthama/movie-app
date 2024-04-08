@@ -9,12 +9,11 @@
 	let details = data.detailsData;
 	let similar = data.similarData;
 	let person = data.creditData;
-	let video = data.videoData
 </script>
 
 <div class="mx-4">
 	<MovieDetails {details} />
-	<VideoCard {video}/>
+	<VideoCard {details}/>
 	<PersonheroComponent {person} />
 	<SimilarMovie {similar} />
 </div>
