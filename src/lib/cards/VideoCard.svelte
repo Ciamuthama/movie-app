@@ -13,6 +13,8 @@
 	function closeModal() {
 		isModalOpen = false;
 	}
+
+let oneVideo = 1
 </script>
 
 <Button
@@ -27,6 +29,7 @@
 	>
 		<div class="openmodal-box bg-white">
 			{#each trailer as movie}
+{#if movie == one}
 					<iframe
 						width="560"
 						height="315"
@@ -36,6 +39,7 @@
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						allowfullscreen
 					></iframe>
+</if>
 			{/each}
 			<div class="openmodal-backdrop">
 				<form on:submit={closeModal} method="dialog" class="openmodal-backdrop">
