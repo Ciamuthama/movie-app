@@ -9,7 +9,6 @@
 	let details = data.detailsData;
 	let similar = data.similarData;
 	let person = data.creditData;
-	let video = data.videoData
 </script>
 
 <div class="mx-4">
