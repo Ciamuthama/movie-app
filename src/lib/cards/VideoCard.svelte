@@ -18,7 +18,7 @@
 
 <Button
 	class=" relative bg-[#c2410c] mt-2 text-white hover:bg-[#fb510e] openbtn"
-	on:click={openModal}>Watch {movie.title} {movie.imdb_id}</Button
+	on:click={openModal}>Watch {movie.title}</Button
 >
 
 {#if isModalOpen}
