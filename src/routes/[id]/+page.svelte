@@ -14,7 +14,7 @@
 
 <div class="mx-4">
 	<MovieDetails {details} />
-	<VideoCard {video}/>
+	<VideoCard {details}/>
 	<PersonheroComponent {person} />
 	<SimilarMovie {similar} />
 </div>

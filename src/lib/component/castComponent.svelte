@@ -14,5 +14,6 @@
 			class="image relative rounded object-fit h-56 w-full max-sm:w-58 transition-all group-hover:scale-105"
 		/>
 	</a>
+	
 </div>
 </Card>
