@@ -24,7 +24,7 @@
 					>
 					<div class="absolute bottom-0 pl-4 text-white">
 						<p class="text-white font-bold">{movie.title}</p>
-						<p class="text-white">{getYear(movie.release_date)}</p>
+						<p class="text-white">{movie.release_date}</p>
 					</div>
 			</div>
 		</div>
