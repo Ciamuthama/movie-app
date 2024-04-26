@@ -34,7 +34,7 @@
 					>
 						<div class="mx-3 mb-3">
 							<h2 class="text-white text-5xl max-sm:text-3xl">{movies.title}</h2>
-							<h2 class="text-white max-sm:text-sm">{getYear(movies.release_date)}</h2>
+							<h2 class="text-white max-sm:text-sm">{movies.release_date}</h2>
 							<p class="text-white max-sm:text-xs font-thin line-clamp-2 w-1/2 fon-">
 								{movies.overview}
 							</p>
