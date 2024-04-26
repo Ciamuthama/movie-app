@@ -33,7 +33,7 @@
 				<div>
 				<h2 class="text-base font-bold text-white mx-2 max-sm:text-xs">{movie.title}</h2>
 				<p class="font-normal text-sm text-white mx-2 max-sm:text-xs">
-					{getYear(movie.release_date)}
+					{movie.release_date}
 				</p></div>
 			</div>
 		</Card>
